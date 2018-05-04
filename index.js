@@ -11,13 +11,11 @@ document.getElementById("greetingmsg").innerHTML = "Good Evening";
 }
 
 var num = Math.ceil( Math.random() * 5 );
-document.body.background = 'images/'+num+'.jpeg'; //https://stackoverflow.com/a/15231912
+document.body.background = 'images/'+Math.ceil( Math.random() * 5 )+'.jpeg'; //https://stackoverflow.com/a/15231912
 document.body.style.backgroundRepeat = "repeat";
 
-var quotes = ['"Time goes on. So whatever youâ€™re going to do, do it. Do it now. Donâ€™t wait." - Robert De Niro'];
-var length = quotes.length;
-var rand = Math.round(Math.random()*(length - 1));
-document.getElementById("quotemsg").innerHTML = quotes[rand];
+var quotes = ['"Time goes on. So whatever you’re going to do, do it. Do it now. Don’t wait." - Robert De Niro'];
+document.getElementById("quotemsg").innerHTML = quotes[Math.round(Math.random()*(quotes.length - 1))];
 
 setInterval(function() {
   var currentTime = new Date ( );
