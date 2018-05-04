@@ -26,4 +26,4 @@ setInterval(function() {
   currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
   var currentTimeString = currentHours + ":" + currentMinutes + " ";
   document.getElementById("timemsg").innerHTML = currentTimeString;
-}, 100);
+}, 250);
