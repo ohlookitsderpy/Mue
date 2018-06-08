@@ -11,10 +11,10 @@ document.getElementById("greetingmsg").innerHTML = "Good Evening";
 }
 
 var num = Math.ceil( Math.random() * 5 );
-document.body.background = 'images/'+Math.ceil( Math.random() * 5 )+'.jpeg'; //https://stackoverflow.com/a/15231912
+document.body.background = 'images/'+Math.ceil( Math.random() * 20 )+'.jpeg'; //https://stackoverflow.com/a/15231912
 document.body.style.backgroundRepeat = "repeat";
 
-var quotes = ['"Time goes on. So whatever you’re going to do, do it. Do it now. Don’t wait." - Robert De Niro'];
+var quotes = ["am quote - quote 2018"];
 document.getElementById("quotemsg").innerHTML = quotes[Math.round(Math.random()*(quotes.length - 1))];
 
 setInterval(function() {
@@ -26,4 +26,4 @@ setInterval(function() {
   currentSeconds = ( currentSeconds < 10 ? "0" : "" ) + currentSeconds;
   var currentTimeString = currentHours + ":" + currentMinutes + " ";
   document.getElementById("timemsg").innerHTML = currentTimeString;
-}, 250);
+}, 512);

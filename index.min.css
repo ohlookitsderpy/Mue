@@ -1,1 +1,1 @@
-body{color:#fff;font-family:"Roboto Light"}h1{font-size:150px}h2{font-size:100px}h3{font-size:25px}
+body{color:#fff;font-family:"Roboto Light";overflow:hidden}h1{font-size:150px}h2{font-size:100px}h3{font-size:20px}.overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:10;background-color:rgba(0,0,0,.2)}
